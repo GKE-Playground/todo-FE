@@ -6,10 +6,10 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.PROJECT_ID }}
-  IMAGE_NAME: FE-ms
+  IMAGE_NAME: fe-ms
   GKE_CLUSTER: todo-gke
   REGION: europe-west4
-  DEPLOYMENT_NAME: FE-ms
+  DEPLOYMENT_NAME: fe-ms
 
 jobs:
   build-push-gcr:
