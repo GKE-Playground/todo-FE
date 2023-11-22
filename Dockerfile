@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN ng build --prod
+RUN ng build --configuration production
 
 # Stage 2: Create a minimal Nginx image to serve the Angular app
 FROM nginx:alpine
