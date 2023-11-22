@@ -12,7 +12,7 @@ type todoType = {
 })
 export class TodoService {
 
-  private getApiUrl = 'http://34.32.194.192:3000/getData';
+  private getApiUrl = 'http://35.204.197.92:3000/getData';
   private postApiUrl = 'http://35.204.197.92:3000/postData';
   private deleteApiUrl  = 'http://35.204.197.92:3000/deleteData';
 
