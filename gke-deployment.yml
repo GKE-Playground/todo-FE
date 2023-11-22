@@ -1,20 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: your-deployment-name
+  name: IMAGE_NAME
   namespace: todo-namespace
 spec:
   selector:
     matchLabels:
-      app: your-app-label
+      app: IMAGE_NAME
   template:
     metadata:
       labels:
-        app: your-app-label
+        app: IMAGE_NAME
+      namespace: test-containers
     spec:
       serviceAccountName: todo-sa
       containers:
-      - name: your-container-name
-        image: europe-west1-docker.pkg.dev/PROJECT_ID/gke-playground/your-image-name:your-git-tag
+      - name: IMAGE_NAME
+        image: europe-west1-docker.pkg.dev/PROJECT_ID/gke-playground/IMAGE_NAME:GIT_TAG
         ports:
         - containerPort: 8080
