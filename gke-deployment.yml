@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: IMAGE_NAME
-      namespace: test-containers
+      namespace: todo-namespace
     spec:
       serviceAccountName: todo-sa
       containers:
